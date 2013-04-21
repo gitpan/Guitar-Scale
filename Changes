@@ -1,5 +1,7 @@
 Revision history for Perl extension Guitar::scale.
 
+0.02  add 'Altered' scale. edited documentation
+
 0.01  Sun Apr 21 20:21:48 2013
 	- original version; created by h2xs 1.23 with options
 		-X -A Guitar::scale

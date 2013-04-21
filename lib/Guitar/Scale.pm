@@ -5,7 +5,7 @@ package Guitar::Scale;
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub pv {
 	#
@@ -40,6 +40,7 @@ sub pv {
 	  'Hindu'           => '201011011010',
 	  'Ryukyu'          => '200011010001',
 	  'HeavyMetal'      => '201101110110',
+	  'Altered'         => '210110111010',
 	);
 	my @key = (
 	  'E','F','F#|Gb','G','G#|Ab','A','A#|Bb','B','C','C#|Db','D','D#|Eb'
@@ -79,7 +80,7 @@ __END__
 
 =head1 NAME
 
-Guitar::Scale.pm - confirm the guitar scale.
+Guitar::Scale.pm - The creation and viewing the guitar scale.
 
 
 =head1 SYNOPSIS
@@ -153,13 +154,14 @@ C<mode> is optional; the default is '0'.
 
 =head1 Handmade Scale
 
-Guitar::Scale::pv('E', '201000010000');
 Set the fingerboard the second argument.
 Be a binary of 12 digits starting from C<2> Always.
 Assume the E first because the bass sound.
 
 	Example:
 	[]+--+--+<>+--+<>+<>+<>+--+--+<>+--+ => '200101110010'
+	
+	Guitar::Scale::pv('E', '201000010000');
 
 
 =head1 Example

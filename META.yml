@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:               Guitar-Scale
-version:            0.01
-abstract:           Perl extension for blah blah blah
+version:            0.02
+abstract:           The creation and viewing the guitar scale.
 author:
     - Mitsuru Yasuda & <dsyrtm@cpan.org>
 license:            unknown
