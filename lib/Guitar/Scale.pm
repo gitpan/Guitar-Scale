@@ -5,7 +5,7 @@ package Guitar::Scale;
 
 use strict;
 use warnings;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub pv {
 	#
@@ -41,6 +41,7 @@ sub pv {
 	  'Ryukyu'          => '200011010001',
 	  'HeavyMetal'      => '201101110110',
 	  'Altered'         => '210110111010',
+	  'Ultralocrian'    => '210110101100',
 	);
 	my @key = (
 	  'E','F','F#|Gb','G','G#|Ab','A','A#|Bb','B','C','C#|Db','D','D#|Eb'
@@ -145,6 +146,9 @@ C<type>
 	'Hawaiian'
 	'Hindu'
 	'Ryukyu'
+	'Altered',
+	'Ultralocrian'
+	
 
 C<mode> is optional; the default is '0'.
 
