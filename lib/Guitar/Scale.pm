@@ -5,43 +5,50 @@ package Guitar::Scale;
 
 use strict;
 use warnings;
-our $VERSION = '0.03';
+our $VERSION = '0.05';
 
 sub pv {
 	#
 	#
 	# use Guitar::Scale;
-	# print Guitar::Scale::pv('A', 'Blues');
+	# print Guitar::Scale::pv('E', 'Chromatic');
 	#
 	#
 	my ($_key, $_t, $mode)  = @_;
 	           $_t ||= 'Minor';
 	my %type = (
-	  'Minor'           => '201101011010',
-	  'HarmonicMinor'   => '201101011001',
-	  'MelodicMinor'    => '201101010101',
-	  'Pentatonic'      => '200101010010',
+	  'MitsuruMetal'    => '201011010111',
+	  'Aeolian'         => '201101011010',
+	  'Altered'         => '210110111010',
+	  'Algerian'        => '201101111001',
 	  'Blues'           => '200101110010',
+	  'Blues++'         => '200111110111',
+	  'Chromatic'       => '211111111111',
 	  'Diminished'      => '201101101101',
 	  'Dorian'          => '201101010110',
-	  'Ionian'          => '201011010101',
-	  'Phrygian'        => '210101011010',
-	  'Lydian'          => '201010110101',
-	  'Mixolydian'      => '201011010110',
-	  'Aeolian'         => '201101011010',
-	  'WholeTone'       => '201010101010',
-	  'Major'           => '201011010101',
-	  'Japanese'        => '210001100010',
-	  'Sobaya'          => '210001011000',
-	  'Spanish'         => '210011011010',
-	  'Roumanian'       => '201100110110',
+	  'Dominant7th'     => '201011010110',
+	  'Diatonic'        => '201010010100',
 	  'Egyptian'        => '201001010010',
+	  'HarmonicMinor'   => '201101011001',
 	  'Hawaiian'        => '201101010101',
 	  'Hindu'           => '201011011010',
-	  'Ryukyu'          => '200011010001',
 	  'HeavyMetal'      => '201101110110',
-	  'Altered'         => '210110111010',
+	  'Ionian'          => '201011010101',
+	  'Japanese'        => '210001100010',
+	  'Lydian'          => '201010110101',
+	  'Minor'           => '201101011010',
+	  'MelodicMinor'    => '201101010101',
+	  'Mixolydian'      => '201011010110',
+	  'Major'           => '201011010101',
+	  'Pentatonic'      => '200101010010',
+	  'Phrygian'        => '210101011010',
+	  'Roumanian'       => '201100110110',
+	  'Ryukyu'          => '200011010001',
+	  'Sobaya'          => '210001011000',
+	  'Spanish'         => '210011011010',
 	  'Ultralocrian'    => '210110101100',
+	  'WholeTone'       => '201010101010',
+
 	);
 	my @key = (
 	  'E','F','F#|Gb','G','G#|Ab','A','A#|Bb','B','C','C#|Db','D','D#|Eb'
@@ -123,31 +130,37 @@ C<key>
 
 C<type>
 
-	'HeavyMetal'
-	'Minor'
-	'HarmonicMinor'
-	'MelodicMinor'
-	'Pentatonic'
+	'MitsuruMetal'
+	'Aeolian'
+	'Altered'
+	'Algerian'
 	'Blues'
+	'Blues++'
+	'Chromatic'
 	'Diminished'
 	'Dorian'
-	'Ionian'
-	'Phrygian'
-	'Lydian'
-	'Mixolydian'
-	'Aeolian'
-	'WholeTone'
-	'Major'
-	'Japanese'
-	'Sobaya'
-	'Spanish'
-	'Roumanian'
+	'Dominant7th'
+	'Diatonic'
 	'Egyptian'
+	'HarmonicMinor'
 	'Hawaiian'
 	'Hindu'
+	'HeavyMetal'
+	'Ionian'
+	'Japanese'
+	'Lydian'
+	'Minor'
+	'MelodicMinor'
+	'Mixolydian'
+	'Major'
+	'Pentatonic'
+	'Phrygian'
+	'Roumanian'
 	'Ryukyu'
-	'Altered',
+	'Sobaya'
+	'Spanish'
 	'Ultralocrian'
+	'WholeTone'
 	
 
 C<mode> is optional; the default is '0'.
@@ -164,8 +177,8 @@ Assume the E first because the bass sound.
 
 	Example:
 	[]+--+--+<>+--+<>+<>+<>+--+--+<>+--+ => '200101110010'
-	
-	Guitar::Scale::pv('E', '201000010000');
+
+	Guitar::Scale::pv('E', '200101110010');
 
 
 =head1 Example
@@ -203,7 +216,12 @@ Assume the E first because the bass sound.
 
 =head1 HeavyMetal
 
-HeavyMetal scale is the original scale of Mitsuru Yasuda.
+'HeavyMetal' && 'MitsuruMetal' scale is the original scale of Mitsuru Yasuda.
+
+
+=head1 Scale Demonstration
+
+	http://youtu.be/KCQBZ-_pWfM
 
 
 =head1 AUTHOR

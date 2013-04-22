@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Guitar-Scale
-version:            0.03
+version:            0.05
 abstract:           The creation and viewing the guitar scale.
 author:
     - Mitsuru Yasuda & <dsyrtm@cpan.org>

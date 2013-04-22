@@ -1,5 +1,10 @@
 Revision history for Perl extension Guitar::scale.
 
+0.05  add 'Algerian', 'Diatonic', 'Dominant7th', 'Chromatic', 'Blues++', 'MitsuruMetal' scale
+      I have corrected in alphabetical order ScaleList
+
+0.04  ..none
+
 0.03  add 'Ultralocrian' scale.
 
 0.02  add 'Altered' scale. edited documentation
