@@ -1,4 +1,4 @@
-Guitar-scale version 0.05
+Guitar-scale version 0.06
 =========================
 
 The README is used to introduce the module and provide instructions on
@@ -25,6 +25,8 @@ NAME
 
     Guitar::Scale.pm - confirm the guitar scale.
 
+	http://youtu.be/5v1lNv_EsiQ
+	http://youtu.be/3GhmcbKCtSE
 
 SYNOPSIS
 
@@ -47,11 +49,6 @@ DESCRIPTION
 
     I can view the guitar scale easily.
     In addition, it is also possible to check by shifting the base sound.
-
-
-Scale Demonstration
-
-	http://youtu.be/KCQBZ-_pWfM
 
 
 OBJECT INTERFACE
@@ -77,6 +74,7 @@ C<type>
 	'Blues'
 	'Blues++'
 	'Chromatic'
+	'Diminish--'
 	'Diminished'
 	'Dorian'
 	'Dominant7th'

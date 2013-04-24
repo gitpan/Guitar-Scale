@@ -5,7 +5,7 @@ package Guitar::Scale;
 
 use strict;
 use warnings;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub pv {
 	#
@@ -25,6 +25,7 @@ sub pv {
 	  'Blues++'         => '200111110111',
 	  'Chromatic'       => '211111111111',
 	  'Diminished'      => '201101101101',
+	  'Diminish--'      => '001001001001',
 	  'Dorian'          => '201101010110',
 	  'Dominant7th'     => '201011010110',
 	  'Diatonic'        => '201010010100',
@@ -137,6 +138,7 @@ C<type>
 	'Blues'
 	'Blues++'
 	'Chromatic'
+	'Diminish--'
 	'Diminished'
 	'Dorian'
 	'Dominant7th'
@@ -221,7 +223,8 @@ Assume the E first because the bass sound.
 
 =head1 Scale Demonstration
 
-	http://youtu.be/KCQBZ-_pWfM
+	http://youtu.be/5v1lNv_EsiQ
+	http://youtu.be/3GhmcbKCtSE
 
 
 =head1 AUTHOR
